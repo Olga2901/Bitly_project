@@ -17,8 +17,9 @@ def is_bitlink(link):
     original_url = "https://api-ssl.bitly.com/v4/bitlinks/"
     urlparse_url = urlparse(link)
     netloc_path = f"{urlparse_url.netloc}{urlparse_url.path}"
-    return requests.get(f"{original_url}{netloc_path}",
-                        headers=headers).ok
+    get_urlparse_url = requests.get(f"{original_url}{netloc_path}",
+                        headers=headers).ok 
+    return get_urlparse_url
 
 
 def shorten_link(token, link):
