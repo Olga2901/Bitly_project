@@ -26,7 +26,8 @@ def shorten_link(token, link):
     params = {
         "long_url": link,
     }
-    response = requests.post("https://api-ssl.bitly.com/v4/shorten", json=params, headers=headers)
+    shorten_url = "https://api-ssl.bitly.com/v4/shorten"
+    response = requests.post(shorten_url, json=params, headers=headers)
     response.raise_for_status()
     return response.json()["link"]
 
