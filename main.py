@@ -7,7 +7,7 @@ import argparse
 
 def create_parser_link():
     parser = argparse.ArgumentParser()
-    parser_argument = parser.add_argument ('-l', '--link', required=True)
+    parser.add_argument ('-l', '--link', required=True)
     parser_link = parser.parse_args()
     return parser_link.link
 
