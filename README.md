@@ -1,17 +1,17 @@
 # Bitly_project
-# Bitly URL shortener
 
 Turning a long link into a short one using a bit.ly or a link bit.ly decrypt into a long one. There is also a visit counter at the link bit.ly.
 
 ### How to install
 
+   1. You need Python3; 
+   2. Get your bitly token on  [bit.ly](https://app.bitly.com/settings/api/);
+   3. Save your token in .env file with variable BITLY_TOKEN = yourtoken;
+   4. Use  `virtualenv` for isolating the project: \
+        `python3 -m venv env`;  
+        `source venv/bin/activate`
+   5. Install dependencies using pip:  
+     `pip install -r requirements.txt`   
+   6. File requirements.txt will install freeze modules. 
+      
 
-Python 3.10.7 should already be installed. 
-Use `pip` (or `pip3`, if there is a conflict with Python2) to install dependencies:
-```
-pip install -r requirements.txt
-```
-It is recommended to use [virtualenv/venv](https://docs.python.org/3/library/venv.html)
-### Project Goals
-
-This code was written for educational purposes as part of an online course for web developers at [dvmn.org](https://dvmn.org/).
