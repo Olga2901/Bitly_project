@@ -7,7 +7,7 @@ There is also a visit counter at the url bit.ly.
 
    1. You need Python3; 
    2. Get your bitly token on  [bit.ly](https://app.bitly.com/settings/api/);
-   3. Save your token in .env file with variable BITLY_TOKEN = yourtoken;
+   3. Save your token in .env file with variable BITLY_TOKEN=yourtoken;
    4. Use  `virtualenv` for isolating the project: \
         `python3 -m venv env`;  
         `source venv/bin/activate`
