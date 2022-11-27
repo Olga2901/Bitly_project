@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import argparse
 
 
-def create_parser_link():
+def parse_link():
     parser = argparse.ArgumentParser()
     parser.add_argument ('-l', '--link', required=True)
     parser_link = parser.parse_args()
@@ -51,7 +51,7 @@ def count_clicks(token, link):
 if __name__ == "__main__":
     load_dotenv()
     token = os.environ["BITLY_TOKEN"]
-    link = create_parser_link()
+    link = parse_link()
 
     try:
         if is_bitlink(link):
