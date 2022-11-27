@@ -8,8 +8,8 @@ import argparse
 def parse_link():
     parser = argparse.ArgumentParser()
     parser.add_argument ('-l', '--link', required=True)
-    parser_link = parser.parse_args()
-    return parser_link.link
+    parser_args = parser.parse_args()
+    return parser_args.link
 
 
 def is_bitlink(link):
